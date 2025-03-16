@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>¿Qué tan listo eres? </h1>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Dato</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre: </td>
+                        <td><input type="text" name="nombre" id="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Edad:</td>
+                        <td><input type="number" name="edad" id="edad"></td>
+                    </tr>
+                    <tr>
+                        <td>¿Hombre o mujer?</td>
+                        <td><select>
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="3">Lesbiane</option>
+                          </select></td>
+                    </tr>
+                    <tr>
+                        <td>Grado de inteligencia: </td>
+                        <td>
+                            <input type="range">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Observaciones:</td>
+                        <td><textarea name="observaciones" id="observaciones"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+                <input type="submit" value="Guarda tu información" onclick="Guardar(event)">
+            </form>
+            <script>
+                function Guardar(){
+                    alert("¡Información guardada!"); 
+                }
+            </script>
+    </body>
+</html>
