@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar publicaciones</title>
+</head>
+<body>
+    <h1>Agregar Publicacion</h1>
+    <form th:object="${publicaciones}" th:action="@{/publicaciones/guardar}" method="post">
+            <div class="form-group">
+                <label >Título</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        th:field="*{titulo}"
+                        placeholder="Ingrese el título"
+                />
+            </div>
+            <div class="form-group">
+                <label >Contenido</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        th:field="*{contenido}"
+                        placeholder="Ingrese contenido"
+                />
+            </div>
+            <div class="form-group">
+                <label >Fecha de Publicación</label>
+                <input
+                type="date"
+                class="form-control"
+                th:field="*{fecha_publicacion}"
+                placeholder="Seleccione la fecha"
+            />
+            </div>
+            <div class="form-group">
+                <label >ID de categoría</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    th:field="*{id_categoria}"
+                    placeholder="Ingrese ID de categoría"
+                    min="1"
+                />
+            </div>
+            <div class="card-action">
+                <input type="submit" class="btn btn-success" value="Guardar"/>
+                <a th:href="@{/publicaciones}" class="btn btn-danger">
+                    Cancelar
+                </a>
+            </div>
+        </form>
+</body>   
+</html>
