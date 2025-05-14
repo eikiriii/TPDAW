@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varios Calculos</title>
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    
+</head>
+<header>
+    <h1>Varios Calculos</h1>
+</header>
+<body>
+    </br>
+    <form style="display: flex; align-items: center; gap: 20px;">
+        <div>
+            <input id="display" type="number" placeholder="Ingrese un número">&nbsp;
+            <br><br>
+             <label for="operacion">Operación:</label>
+        <select id="operacion">
+            <option value="primo">Es primo</option>
+            <option value="par">Es par</option>
+            <option value="factorial">Factorial</option>
+            <option value="SumaP">Suma pares</option>
+            <option value="SumaI">Suma impares</option>
+        </select>
+        <br><br>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input id="resultado" type="text" placeholder="El resultado es:">&nbsp;
+            <input type="button" value="limpiar" onclick="limpiar()">
+        </div>
+    </form>
+    <br>
+    <img src="../assets/images/woaikirishima.jpg" alt="Calculadora" style="width: auto; height: auto;">
+    <br>
+    <footer>
+        <h3>Desarrollado por FERNANDA SALAZAR</h3>
+    </footer>
+</body>
+
+<script src="/assets/js/Operaciones.js"></script>
+</html>
