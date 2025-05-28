@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones básicas AJAX</title>
+</head>
+<body>
+    <h1>Operaciones básicas</h1>
+    <form>
+        <input type="number" id="n1" placeholder="Número 1">
+        <input type="number" id="n2" placeholder="Número 2">
+        <select id="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select>
+        <p>Resultado: <span id="muestra-resultado">0.0</span></p>
+        <input type="button" value="Calcular" onclick="calcularOperacionesAJAX()">
+    </form>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="/assets/js/operaciones.js"></script>
+</html>
