@@ -1,0 +1,72 @@
+/* Inspirado en estilo neko kawaii uwu */
+body {
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+  background: #ffe6f7;
+  color: #ff69b4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 24px;
+  color: #ffb6e6;
+  text-shadow: 2px 2px 0 #fff, 0 0 12px #ffb6e6;
+  letter-spacing: 3px;
+  font-size: 2.5em;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff0fa;
+  border: 3px dashed #ffb6e6;
+  border-radius: 24px 24px 36px 36px;
+  box-shadow: 0 6px 18px #ffb6e655;
+  padding: 20px;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+}
+.imagen::before {
+  content: 'ฅ^•ﻌ•^ฅ';
+  position: absolute;
+  top: -28px;
+  font-size: 1.6em;
+  color: #ffb6e6;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.imagen:hover {
+  transform: scale(1.07) rotate(2deg);
+  border-color: #ff69b4;
+  box-shadow: 0 8px 24px #ffb6e688;
+}
+
+button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffb6e6;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #ffb6e633;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  transition: background 0.2s, transform 0.2s;
+  font-family: inherit;
+}
+button:hover {
+  background: #ff69b4;
+  transform: scale(1.12) rotate(-2deg);
+}

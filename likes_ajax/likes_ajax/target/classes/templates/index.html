@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué prefieres?</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h1>¿Gato, pollo o hámster?</h1>
+
+  <div class="galeria">
+    <div class="imagen">
+      <img src="/gato.jpeg" width="300" height="200">
+      <p id="like1" th:text="${likes.imagen1}">0</p>
+      <button onclick="like(1)">Me gusta</button>
+    </div>
+    <div class="imagen">
+      <img src="/gallina.jpeg" width="300" height="200">
+      <p id="like2" th:text="${likes.imagen2}">0</p>
+      <button onclick="like(2)">Me gusta</button>
+    </div>
+    <div class="imagen">
+      <img src="/hamster.jpeg" width="300" height="200">
+      <p id="like3" th:text="${likes.imagen3}">0</p>
+      <button onclick="like(3)">Me gusta</button>
+    </div>
+  </div>
+
+  <script src="/Operaciones.js"></script>
+
+</body>
+</html>
